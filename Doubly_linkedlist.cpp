@@ -80,22 +80,6 @@ int get_length(Node* &head){               // finding the lenght of the doubly l
     return len;
 }
 
-void delete_element(Node*&head , Node *& tail, int position){
-    if (position == 1){
-        Node* temp = head;
-        temp->next->prev = NULL;
-        head = temp->next;
-        temp->next = NULL;
-    else{
-        Node* temp = head;
-        int cnt = 1;
-        while(cnt < position){
-            prev = NULL;
-            curr = curr->next
-        }
-           
-    }
-}
 
 
 int main(){
@@ -120,7 +104,6 @@ int main(){
     insertAtpositon(head,tail,67,4);
     insertAtpositon(head,tail,51,6);
     print_list(head);
-    delete_element(head,tail,4);
     print_list(head);
     return 0;
 }
