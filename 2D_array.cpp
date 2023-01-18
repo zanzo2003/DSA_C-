@@ -56,5 +56,21 @@ int main(){
         cout<<endl;
     }
 
+    // To search a sorted matrix
+    // A sorted matrix is a matrix whose rows and coloumns both are either in ascending or descending order.
+    int n = 45;
+    bool flag = false;
+    for(int i = 0; i<2; i++){
+        for(int j = 0; j<2; j++){
+            if(a1[i][j] == n){
+                flag = true;
+                cout<<"The element is found";
+            }
+        }
+    }
+    if(!flag){
+        cout<<"the element is not found";
+    }
+
     return 0;
 }
